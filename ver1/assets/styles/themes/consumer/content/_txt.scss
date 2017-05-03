@@ -1,0 +1,31 @@
+.txt {
+	font-family: $font-brand;
+}
+
+// Text Weights
+.txt--weight-light {
+	font-family: $font-brand-light;
+}
+
+.txt--weight-medium {
+	font-family: $font-brand-medium;
+}
+
+.txt--weight-bold {
+	font-family: $font-brand-bold;
+	font-weight: normal;
+}
+
+.txt--weight-black {
+	font-family: $font-brand-black;
+	font-weight: normal;
+}
+
+// Text Colors
+.txt--color-success {
+  color: $green-1;
+}
+
+.txt--color-brand {
+  color: $blue-1;
+}

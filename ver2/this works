@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>MultiLevel Menu</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+
+</head>
+
+<body>
+    <div class="responsive__header">
+        <div class="flag flag--middle">
+            <div class="flag__hd">
+
+                <ul class="hList hList--middle">
+                    <li>
+                        <div class="header__logo header__logo--allstate"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Horizontal Navigation List -->
+            <div class="flag__ft txt--align-right">
+
+
+                <a href="#nav1" data-toggle="nav1">
+                    <ul class="header__mobileUtil">
+                        <li>
+                            <button class="hamburger__container" id="hamburger">
+                                <div class="hamburger__navicon"></div>Menu
+                            </button>
+                        </li>
+                    </ul>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="nav1" class="sideNav hide">
+        <ul>
+            <li class="sideNav--item--link"><a href="#layout">Layout</a></li>
+            <li class="sideNav--item--link"><a href="#patterns">Patterns</a></li>
+            <li class="sideNav--item--link"><a href="#components">components</a></li>
+        </ul>
+        <div id="layout" class="sideNav--item hide">
+            <a href="#nav1">
+                < Back</a>
+                    Layout crap goes here
+        </div>
+
+        <div id="patterns" class="sideNav--item hide">
+            <a href="#nav1">
+                < Back</a>
+                    Pattern crap goes here
+        </div>
+
+        <div id="components" class="sideNav--item hide">
+            <a href="#nav1">
+                < Back</a>
+                    Components crap goes here
+        </div>
+
+    </div>
+
+
+    <script src="assets/scripts/libs/aic-1.6.0.min.js"></script>
+    <script>
+        $(function () {
+            // Remove the # from the hash, as different browsers may or may not include it
+            var hash = location.hash.replace('#', '');
+            if (hash != '') {
+                // Show the hash if it's set
+
+                // Clear the hash in the URL
+                location.hash = '';
+            }
+        });
+
+        $(function () {
+            var sidebar = $('.sideNav');
+
+            $('[data-toggle]').on('click', function () {
+                var item = $(this).data('toggle');
+                $('#' + item).toggle();
+                $('#' + item).toggleClass('active');
+                sidebar.toggleClass("hide");
+                sidebar.toggleClass('animated fadeInLeft');
+                            
+                if($('#nav1').css('display') == 'block') {         
+                  sidebar.removeAttr("style");
+                 
+
+                } else {
+                    sidebar.removeAttr("style");
+                        
+                    sidebar.toggleClass('fadeOutLeft');
+                }
+
+            });
+
+            //  $(document).keyup(function (e) {
+            //     if (e.keyCode == 27) {               
+            //         $('#hamburger div').removeClass('hamburger__navicon--isActive');
+                    
+
+            //     }
+            // });
+
+            $(function () {
+                $('#hamburger').on("click", function () {
+                    // event.stopPropagation();
+                    $('#hamburger div').toggleClass('hamburger__navicon--isActive');
+                });
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
+
+
+if ($('.togglePanel').is(':visible')) {
+          $('.togglePanel').slideUp().removeClass('nav--show');
+          $('..header__mobileUtil').removeClass('hamburger__navicon--isActive');
+        }

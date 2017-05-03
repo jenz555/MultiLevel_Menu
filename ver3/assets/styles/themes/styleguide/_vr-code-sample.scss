@@ -1,0 +1,20 @@
+.vr-sample {
+  margin-bottom: 3rem;
+}
+
+.vr-sample > * + *:before,
+.vr-sample > :last-child:after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: $gray-5;
+  margin-bottom: 1rem;
+}
+
+.vr-sample > :last-child {
+  margin-bottom: 0;
+}
+
+.vr-sample > :last-child:after {
+  margin-top: 5rem;
+}

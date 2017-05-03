@@ -1,0 +1,44 @@
+.sg-global-alert {
+  background-color: $blue-2;
+  margin: -1.5rem -1rem 2rem;
+  padding: 1rem;
+  @include dropShadow(inset 0 -4px 4px -4px darken($blue-2, 10%));
+}
+
+.sg-global-alert--hasError {
+  border-left: 5px solid darken($red-1, 5%);
+}
+
+.sg-global-alert-icon {
+  display: inline-block;
+  background-color: darken($red-1, 5%);
+  height: 2rem;
+  width: 2rem;
+  float: left;
+  @include border-radius(50%);
+
+  > svg {
+    height: 100%;
+    width: 100%;
+    padding: .25rem;
+    fill: $white;
+  }
+}
+
+.sg-global-alert a,
+.sg-global-alert a:hover,
+.sg-global-alert a:visited {
+  color: $blue-1;
+}
+
+.sg-global-alert-heading {
+  font-family: $font-brand-bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .sg-global-alert {
+    margin: -2rem -2rem 2rem;
+  }
+}

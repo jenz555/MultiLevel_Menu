@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="pay">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>MultiLevel Menu</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+
+</head>
+
+<body>
+    <div class="responsive__header global-header">
+        <div class="flag flag--middle">
+            <div class="flag__hd">
+
+                <ul class="hList hList--middle">
+                    <li>
+                        <div class="header__logo header__logo--allstate"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Horizontal Navigation List -->
+            <div class="flag__ft txt--align-right">
+
+                <ul id="toggle-nav-1" class="header__mobileUtil">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <button class="hamburger__container" id="dialogTrigger-1">
+                                <div class="hamburger__navicon"></div>Menu
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="mainNav">
+        <div id="nonModalDialog" class="dialogNonModal" role="dialog" aria-labelledby="dialogTrigger-1" aria-describedby="modal-title">
+            <div class="dialog__wrap">
+                <div class="dialog__body" tabindex="0">
+                    <div class="faq" id="main">
+                       
+                       <a href="" data-toggle="#sub1">Link to Sub 1 </a>
+
+                    </div>
+
+                     <div id="sub1" class="hide">
+                        Sub container
+                          <a href="#main">back </a>
+                          <a href="" id="one">Link to sub2 </a>
+
+                    </div>
+
+                     <div id="sub2" class="hide">
+                        Sub2 container
+                        <a href="">back </a>
+                          <a href="" id="two">Link to Sub  2</a>
+
+                    </div>
+
+                       <div id="sub3" class="hide">
+                        Sub3 container
+                        <a href="">back </a>
+                          <a href="" id="three">Link to Sub 3 </a>
+
+                    </div>
+                </div>
+                <div class="dialog__footer">
+                    <div class="control">
+                        <ul class="control__group">
+                            <li>
+                                <a href="#" class="btn">Primary</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn--dismiss btn__hideDialog">Tertiary</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/scripts/libs/aic-1.6.0.min.js"></script>
+    <script src="assets/scripts/_global.js"></script>
+    <script src="assets/scripts/utilities.js"></script>
+    <script src="assets/scripts/flexdialog.plugin.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#dialogTrigger-1').als_flexDialog({ 'target': 'nonModalDialog' });
+
+
+            // Interaction
+            $(function () {
+                $("a[data-toggle]").on("click", function (e) {
+                    e.preventDefault();
+                    var selector = $(this).data("toggle");
+                    $(".faq").hide();
+                    //$("#questions").hide();
+                    $(selector).show().addClass('animated slideInRight');
+                    //$("a[data-toggle]").hide();
+                    // $('<li id="menu">' + '<i class="icon icon--sm icon--dusty icon--arrow icon--arrow--left"></i>' + '</li>').insertBefore("ul.faq__nav li")
+
+                });
+            });
+
+
+            $(function () {
+                $('#hamburger').on("click", function () {
+                    // event.stopPropagation();
+                    $('#hamburger div').toggleClass('hamburger__navicon--isActive');
+                });
+            });
+
+
+
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

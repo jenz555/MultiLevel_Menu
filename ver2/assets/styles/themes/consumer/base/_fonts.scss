@@ -1,0 +1,103 @@
+// ------------------------
+//  INFORMATION
+// ------------------------
+// Important: Do not change these core files. Any changes should be 
+//            added to a theme file. Example '/themes/_fonts.scss'
+// 
+// Description: This is how we import our primary Allstate font family. If
+//              additional variations are needed (i.e. 'Allstate Sans Italic') add the extra @font-face in themes.
+//
+// ------------------------ 
+//  EXAMPLES
+// ------------------------
+//
+// .className {
+//      font-family: @font--brand;
+// }
+//
+
+@font-face {
+    font-family: 'Allstate Sans Regular';
+    src: url('../fonts/allstatesansw-regular.woff') format('woff'), // Modern browsers
+         url('../fonts/allstatesansw-regular.woff2') format('woff2'), // Better compression
+         url('../fonts/allstatesansw-regular.ttf') format('truetype') // Safari, Android, iOS
+}
+
+@font-face {
+    font-family: 'Allstate Sans Regular Italic';
+    src: url('../fonts/allstatesansw-regularitalic.woff') format('woff'),
+         url('../fonts/allstatesansw-regularitalic.woff2') format('woff2'),
+         url('../fonts/allstatesansw-regularitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allstate Sans Light';
+    src: url('../fonts/allstatesansw-light.woff') format('woff'),
+         url('../fonts/allstatesansw-light.woff2') format('woff2'),
+         url('../fonts/allstatesansw-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allstate Sans Light Italic';
+    src: url('../fonts/allstatesansw-lightitalic.woff') format('woff'),
+         url('../fonts/allstatesansw-lightitalic.woff2') format('woff2'),
+         url('../fonts/allstatesansw-lightitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allstate Sans Medium';
+    src: url('../fonts/allstatesansw-medium.woff') format('woff'),
+         url('../fonts/allstatesansw-medium.woff2') format('woff2'),
+         url('../fonts/allstatesansw-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allstate Sans Medium Italic';
+    src: url('../fonts/allstatesansw-mediumitalic.woff') format('woff'),
+         url('../fonts/allstatesansw-mediumitalic.woff2') format('woff2'),
+         url('../fonts/allstatesansw-mediumitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+      
+@font-face {
+    font-family: 'Allstate Sans Bold';
+    src: url('../fonts/allstatesansw-bold.woff') format('woff'), // Modern browsers
+         url('../fonts/allstatesansw-bold.woff2') format('woff2'), // Better compression
+         url('../fonts/allstatesansw-bold.ttf') format('truetype') // Safari, Android, iOS
+}
+
+@font-face {
+    font-family: 'Allstate Sans Bold Italic';
+    src: url('../fonts/allstatesansw-bolditalic.woff') format('woff'),
+         url('../fonts/allstatesansw-bolditalic.woff2') format('woff2'),
+         url('../fonts/allstatesansw-bolditalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allstate Sans Black';
+    src: url('../fonts/allstatesansw-black.woff') format('woff'),
+         url('../fonts/allstatesansw-black.woff2') format('woff2'),
+         url('../fonts/allstatesansw-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allstate Sans Black Italic';
+    src: url('../fonts/allstatesansw-blackitalic.woff') format('woff'),
+         url('../fonts/allstatesansw-blackitalic.woff2') format('woff2'),
+         url('../fonts/allstatesansw-blackitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

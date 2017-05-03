@@ -1,0 +1,34 @@
+.btn--download,
+.btn--download:visited {
+  background-color: $white;
+  text-shadow:none;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 2rem;
+  min-height: 2rem;
+  padding: 0 1rem;
+  font-family: $font-bold;
+  color: $blue-1;
+  @include appearance();
+  @include borderBox();
+  @include border-radius(4px);
+}
+
+.btn--download:hover,
+.btn--download:active,
+.btn--download:focus {
+    background-color:$gray-2;
+    color: $blue-5;
+    text-decoration: none;
+}
+
+.header .btn--download {
+  margin-right: 1rem;
+  display: none;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .header .btn--download {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,13 @@
+.sg-example-module {
+  padding: 1rem;
+  text-align: center;
+}
+
+.responsiveUtil--visible {
+  background-color: $green-2;
+  color: $white;
+}
+
+.responsiveUtil--hidden {
+  background: $gray-2;
+}

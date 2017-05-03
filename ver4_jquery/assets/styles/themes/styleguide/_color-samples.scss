@@ -1,0 +1,161 @@
+.color-sample {
+  position: relative;
+  margin-bottom: .5rem;
+  text-align: center;
+  background-color: $gray-1;
+  padding-bottom: .5rem;
+  overflow: hidden;
+  @include border-radius(5px);
+}
+
+.color-sample:before {
+  background-color: $gray-2;
+  content: '';
+  display: block;
+  height: 4rem;
+  margin: 0 auto .5rem;
+  @include dropShadow(inset 0 -4px 6px -4px rgba(0,0,0,0.15));
+}
+
+// Reds
+.color-sample-red-1:before {
+  background-color: $red-1;
+}
+
+// Oranges
+.color-sample-orange-1:before {
+  background-color: $orange-1;
+}
+
+.color-sample-orange-2:before {
+  background-color: $orange-2;
+}
+
+.color-sample-orange-3:before {
+  background-color: $orange-3;
+}
+
+// Yellows
+.color-sample-yellow-1:before {
+  background-color: $yellow-1;
+}
+
+.color-sample-yellow-2:before {
+  background-color: $yellow-2;
+}
+
+.sample-message-yellow:before {
+  background-color: $message-yellow;
+}
+
+// Greens
+.color-sample-green-1:before {
+  background-color: $green-1;
+}
+
+.color-sample-green-2:before {
+  background-color: $green-2;
+}
+
+.color-sample-green-3:before {
+  background-color: $green-3;
+}
+
+// Teals
+.color-sample-teal-1:before {
+  background-color: $teal-1;
+}
+
+.color-sample-teal-2:before {
+  background-color: $teal-2;
+}
+
+// Blues
+.color-sample-blue-1:before {
+  background-color: $blue-1;
+}
+
+.color-sample-blue-2:before {
+  background-color: $blue-2;
+}
+
+.color-sample-blue-3:before {
+  background-color: $blue-3;
+}
+
+.color-sample-blue-4:before {
+  background-color: $blue-4;
+}
+
+.color-sample-blue-5:before {
+  background-color: $blue-5;
+}
+
+// Violets
+.color-sample-violet-1:before {
+  background-color: $violet-1;
+}
+
+.color-sample-violet-2:before {
+  background-color: $violet-2;
+}
+
+// Cool Grays
+.color-sample-cool-gray-1:before {
+  background-color: $cool-gray-1;
+}
+
+.color-sample-cool-gray-2:before {
+  background-color: $cool-gray-2;
+}
+
+.color-sample-cool-gray-3:before {
+  background-color: $cool-gray-3;
+}
+
+.color-sample-cool-gray-4:before {
+  background-color: $cool-gray-4;
+}
+
+.color-sample-cool-gray-5:before {
+  background-color: $cool-gray-5;
+}
+
+.color-sample-cool-gray-6:before {
+  background-color: $cool-gray-6;
+}
+
+// Grays
+.color-sample-gray-1:before {
+  background-color: $gray-1;
+}
+
+.color-sample-gray-2:before {
+  background-color: $gray-2;
+}
+
+.color-sample-gray-3:before {
+  background-color: $gray-3;
+}
+
+.color-sample-gray-4:before {
+  background-color: $gray-4;
+}
+
+.color-sample-gray-5:before {
+  background-color: $gray-5;
+}
+
+.color-sample-gray-6:before {
+  background-color: $gray-6;
+}
+
+// Black
+.color-sample-black:before {
+  background-color: $black;
+}
+
+// Blackr
+.color-sample-white:before {
+  background-color: $white;
+}

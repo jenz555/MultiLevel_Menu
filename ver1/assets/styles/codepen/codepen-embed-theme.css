@@ -1,0 +1,31 @@
+body {
+  background: #fff !important; }
+
+.code-box {
+  width: 100% !important; }
+
+#output.single-output .active,
+#output.split-output .active,
+#output.split-output {
+  height: auto !important; }
+
+.embed-nav {
+  display: none !important; }
+
+.rerun-button {
+  display: none !important; }
+
+#html-box,
+#js-box,
+#result-box {
+  display: block !important; }
+
+#js-box,
+#css-box,
+#html-box {
+  overflow: auto; }
+
+#js-box *,
+#css-box *,
+#html-box * {
+  white-space: pre !important; }

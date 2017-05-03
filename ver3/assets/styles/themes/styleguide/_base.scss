@@ -1,0 +1,17 @@
+body.sg {
+  background-color: $gray-1;
+}
+
+code {
+  word-break: break-all;
+  white-space: normal;
+  display: inline-block;
+}
+
+.bg--black {
+  background-color: $black;
+}
+
+.no-bg {
+  background-color: transparent;
+}

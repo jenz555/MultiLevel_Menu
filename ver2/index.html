@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>MultiLevel Menu</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+
+</head>
+
+<body>
+    <div class="responsive__header">
+        <div class="flag flag--middle">
+            <div class="flag__hd">
+
+                <ul class="hList hList--middle">
+                    <li>
+                        <div class="header__logo header__logo--allstate"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Horizontal Navigation List -->
+            <div class="flag__ft txt--align-right">
+
+
+                <!--<a href="#nav1" data-toggle="nav1">-->
+                <ul class="header__mobileUtil">
+                    <li>
+                        <button class="hamburger__container" id="hamburger">
+                                <div class="hamburger__navicon"></div>Menu
+                            </button>
+                    </li>
+                </ul>
+                <!--</a>-->
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="nav1" data-toggle="nav1" class="sideNav">
+        <ul class="sideNav--links">
+        
+            <a href="#consumer" data-toggle="consumer">
+                  <li class="sideNav--item--link">
+                <div class="flag flag--middle">
+                  
+                        <div class="flag__bd txt--weight-bold">Consumer Guidelines</div>
+                        <div class="flag__ft">></div>
+                   
+                </div>
+                 </li>
+            </a>
+
+              <a href="#agent" data-toggle="agent">
+                  <li class="sideNav--item--link">
+                <div class="flag flag--middle">
+                  
+                        <div class="flag__bd txt--weight-bold">Agent Guidelines</div>
+                        <div class="flag__ft">></div>
+                   
+                </div>
+                 </li>
+            </a>
+
+                <a href="#about" data-toggle="about">
+                  <li class="padding--x1">
+                <div>About</div>
+                 </li>
+            </a>
+             <a href="#contribution" data-toggle="contribution">
+                 <li class="padding--x1">
+                <div>Contribution</div>
+                 </li>
+            </a>
+             <a href="#resources" data-toggle="resources">
+                  <li class="padding--x1">
+                <div>Resources</div>
+                 </li>
+            </a>
+       
+        </ul>
+
+    </div> 
+ <!--//nav1menu - main menu-->
+
+ <!--//Consumer Guidelines - main menu-->
+      <div id="consumer" class="sideNav--item hide">
+         
+                <div class="sideNav__hd txt--weight-bold">Consumer Guidelines</div>
+                 <div class="back">
+                     <a href="#nav1">< back</div>
+                 
+                 </div>  
+
+       </div>
+  <!--//Consumer Guidelines - main menu-->      
+     
+
+     <div id="agent" class="sideNav--item hide">
+        agent
+     </div>
+
+         <div id="jenny" class="sideNav--item hide">
+        jenny
+     </div>
+     
+
+
+</div>
+
+
+    <script src="assets/scripts/libs/aic-1.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var sidebar = $('.sideNav');
+            var target = $('.sideNav--item:target'); //variable for this doesn't seem to work
+            var sideBarItem = $('.sideNav--item')
+
+            //refactor with variables and refactor into plugin
+            //Create function that toggles css and display properties
+            //write separate click function for back button because 
+            //this breaks the back button when ESC key is hit on subnav
+          
+                $(function () {
+                    // Remove the #tag from the hash on refresh
+                    var hash = location.hash.replace('#', '');
+                    if (hash != '') {
+                        location.hash = '';
+                    }
+                });
+
+                //This solves the problem of closing subNav on the back ui - but now main nav needs two clicks
+                //wrapped in a document.ready - didn't work correctly
+                $(function () {
+                    $('.back').on('click', function () {
+                        if (sideBarItem.hasClass('fadeInLeft')) {
+                            sideBarItem.css({ display: "none" })
+                           // alert('asdfasd') //this seems to fix the double click thing
+                        }
+                    });
+
+                });
+
+                $(function () {
+                    $('.header__mobileUtil button').on('click', function () {
+                        sidebar.toggleClass("sideNav--open");
+                        //closes subNav menu on hamburger click
+                        if (sideBarItem.hasClass('fadeInLeft')) {
+                            sideBarItem.removeAttr("style"); //Need this to reset the :target property - I think.
+                            //this seems odd to be doing this - does this defeat the purpose of using :target
+                            $('.sideNav--item:target').css({ display: "none" });
+
+                        }
+                    });
+
+                });
+
+
+                $(function () {
+                    //adds slide in to subNav
+                    $('.sideNav--item--link').on('click', function () {
+                        sideBarItem.removeAttr("style");
+                        $('.sideNav--item').addClass('animated fadeInLeft');
+                         sideBarItem.removeAttr("style");
+                      //  setTimeout(); //this did the trick to the two click issue. 
+                    });
+                });
+
+
+                $(function () {
+                    //changes visibility on data toggle clicks
+                    $('[data-toggle]').on('click', function () {
+                        if ($('.sideNav--item:target').css({ display: "none" }))
+                            $('.sideNav--item:target').css({ display: "block" })
+                    });
+
+                });
+
+
+                $(document).keyup(function (e) {
+                    if (e.keyCode == 27) {
+                        $('#hamburger div').removeClass('hamburger__navicon--isActive');
+                        sidebar.removeClass("sideNav--open");
+                        $('.sideNav--item').removeAttr("style");
+                        if ($('.sideNav--item:target').css('display') == 'block') {
+                            $('.sideNav--item:target').hide();
+                        }
+                        else {
+                            $('.sideNav--item:target').show();
+                            
+                        }
+                    }
+                });
+
+                $(function () {
+                    $('#hamburger').on("click", function () {
+                        // event.stopPropagation();
+                        $('#hamburger div').toggleClass('hamburger__navicon--isActive');
+                    });
+                });
+
+            });
+    </script>
+
+</body>
+
+</html>

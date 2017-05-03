@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="pay">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>MultiLevel Menu</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css" />
+
+</head>
+
+<body>
+    <div class="responsive__header global-header">
+        <div class="flag flag--middle">
+            <div class="flag__hd">
+
+                <ul class="hList hList--middle">
+                    <li>
+                        <div class="header__logo header__logo--allstate"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Horizontal Navigation List -->
+            <div class="flag__ft txt--align-right">
+
+                <ul id="toggle-nav-1" class="header__mobileUtil">
+                    <li>
+                        <a href="#mainNav">
+                            <button class="hamburger__container" id="hamburger">
+                                <div class="hamburger__navicon"></div>Menu
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <!--main menu-->
+        <!--TODO: Hide this menu and create button click on hamburger in nav to toggle-->
+
+        <nav role="navigation" id="foo">
+
+            <dl class="contextual-nav isActive txt--weight-bold">
+                <dd>
+                    <a href="#consumerGuidelines" data-toggle="consumerGuidelines">
+
+                        <ul class="split">
+                            <li class="split__left">Consumer Guidelines</li>
+                            <li class="split__right">
+                                <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                            </li>
+
+                        </ul>
+
+                    </a>
+                </dd>
+
+                 <dd>
+                    <a href="#agentGuidelines" data-toggle="agentGuidelines">
+
+                        <ul class="split">
+                            <li class="split__left">Agent Guidelines</li>
+                            <li class="split__right">
+                                <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                            </li>
+
+                        </ul>
+
+                    </a>
+                </dd>
+               
+           
+            </dl>
+        </nav>
+        <!--main menu-->
+
+        <div id="subNav">
+            <!--Consumer Guidelines menu-->
+            <div class="menu--item" id="consumerGuidelines">
+                <div class="menu__hd txt--weight-bold">Consumer Guidelines</div>
+                <dl class="contextual-nav isActive">
+                    <dd>
+                        <a href="#mainNav" class="back" class="txt--weight-light txt--size-14">
+                            < Back</a>
+                    </dd>
+                    <dd>
+                        <a href="" data-toggle="basics">
+                            <ul class="split">
+                                <li class="split__left  txt--weight-bold">Basics</li>
+                                <li class="split__right">
+                                    <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                                </li>
+
+                            </ul>
+                        </a>
+                    </dd>
+
+                     <dd>
+                        <a href="#webResponsive" data-toggle="basics">
+                            <ul class="split">
+                                <li class="split__left  txt--weight-bold">Web Responsive</li>
+                                <li class="split__right">
+                                    <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                                </li>
+
+                            </ul>
+                        </a>
+                    </dd>
+
+                     <dd>
+                        <a href="" data-toggle="basics">
+                            <ul class="split">
+                                <li class="split__left  txt--weight-bold">Mobile Native</li>
+                                <li class="split__right">
+                                    <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                                </li>
+
+                            </ul>
+                        </a>
+                    </dd>
+                </dl>
+
+            </div>
+        <!--Consumer Guidelines menu-->
+
+
+
+ <!--Agent Guidelines menu-->
+            <div class="menu--item" id="agentGuidelines">
+                <div class="menu__hd txt--weight-bold">Agent Guidelines</div>
+                 <dl class="contextual-nav isActive">
+                 <dd>
+                        <a href="#mainNav" class="back" class="txt--weight-light txt--size-14">
+                            < Back</a>
+                    </dd>
+                    </dl>
+              
+            </div>
+<!--Agent Guidelines menu-->
+
+
+
+ <!--Web Responsive menu-->
+            <div class="menu--item" id="webResponsive">
+                <div class="menu__hd txt--weight-bold">Web Responsive</div>
+                 <dl class="contextual-nav isActive">
+                 <dd>
+                        <a href="#consumerGuidelines" class="back" class="txt--weight-light txt--size-14">
+                            < Back</a>
+                    </dd>
+
+                     <dd>
+                        <a href="#forms" data-toggle="forms">
+                            <ul class="split">
+                                <li class="split__left  txt--weight-bold">Forms</li>
+                                <li class="split__right">
+                                    <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                                </li>
+
+                            </ul>
+                        </a>
+                    </dd>
+
+                    <dd>
+                        <a href="" data-toggle="layout">
+                            <ul class="split">
+                                <li class="split__left  txt--weight-bold">Layout</li>
+                                <li class="split__right">
+                                    <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                                </li>
+
+                            </ul>
+                        </a>
+                    </dd>
+
+                     <dd>
+                        <a href="" data-toggle="templates">
+                            <ul class="split">
+                                <li class="split__left  txt--weight-bold">Templates</li>
+                                <li class="split__right">
+                                    <img src="assets/images/arrow.svg" class="icon--arrow" alt="Arrow">
+                                </li>
+
+                            </ul>
+                        </a>
+                    </dd>
+
+                    </dl>
+              
+            </div>
+<!--Web Responsive menu-->
+
+
+
+ <!--Forms menu-->
+            <div class="menu--item" id="forms">
+                <div class="menu__hd txt--weight-bold">Forms</div>
+                 <dl class="contextual-nav isActive">
+                 <dd>
+                        <a href="#webResponsive" class="back" class="txt--weight-light txt--size-14">
+                            < Back</a>
+                    </dd>
+
+                     <dd>
+                               <a href=""> Auto Complete Fields</a>
+                                <a href="">Buttons</a>
+                                <a href="">Button Groups</a>
+                                <a href="">Checkboxes</a>
+                                <a href="">Date Pickers</a>
+                                <a href="">Dropdowns</a>
+                                <a href="">Inline Errors</a>
+                                <a href="">Hints</a>
+                                <a href="">Labels</a>
+                    </dd>
+
+               
+                 </dl>
+            </div>
+    <!--Forms menu-->
+
+        </div><!--end of subNav menu-->
+    </div><!--end of menu-->
+    
+    <script src="assets/scripts/libs/aic-1.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var mainMenu = $('.menu');
+            var menuItem = $('.menu--item');
+
+            mainMenu.hide();
+
+            // Remove the #tag from the hash on refresh
+            $(function () {
+                var hash = location.hash.replace('#', '');
+                if (hash != '') {
+                    location.hash = '';
+                }
+            });
+
+            $(function () {
+                $('.header__mobileUtil button').on('click', function () {
+                    mainMenu.toggle()
+                    mainMenu.toggleClass('animated fadeInLeft');
+                    menuItem.addClass('hide');
+
+                    if ($('nav').css({ display: "none" })) {
+                        $('nav').css({ display: "block" })
+
+                    }
+                });
+
+            });
+            $(document).keyup(function (e) {
+                if (e.keyCode == 27) {
+                    $('#hamburger div').removeClass('hamburger__navicon--isActive');
+                    mainMenu.removeClass('animated fadeInLeft').hide();
+
+                }
+            });
+
+            //hide main menu on click to sub navs
+            $(function () {
+                $('[data-toggle]').on('click', function () {
+                    mainMenu.addClass('animated fadeInLeft')
+                    menuItem.addClass('animated fadeInLeft')
+                    // if ($('#foo').css({ display: "block" })) {
+                    //     $('#foo').css({ display: "none" })
+                    // }
+                });
+
+            });
+
+            //back to main menu
+            $(function () {
+                $('.back').on('click', function () {
+                    if ($('#foo').css({ display: "none" })) {
+                        $('#foo').css({ display: "block" })
+                    }
+                });
+
+            });
+
+
+            $(function () {
+                $('#hamburger').on("click", function () {
+                    // event.stopPropagation();
+                    $('#hamburger div').toggleClass('hamburger__navicon--isActive');
+                });
+            });
+
+
+
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.sg-c-motion-item {
+	border: .1rem solid $gray-3;
+	border-radius: .5rem;
+	display: inline-block;
+	margin: 1rem;
+	overflow: hidden;
+	width: 10rem;
+
+	.sg-c-motion-example {
+		background: $cool-gray-1;
+		height: 10rem;
+		overflow: hidden;
+		position: relative;
+		width: 10rem;
+
+		.sg-c-motion-object {
+			background-color: $blue-1;
+			border-radius: 50%;
+			height: 6rem;
+			left: 2rem;
+			position: absolute;
+			top: 2rem;
+			width: 6rem;
+		}
+
+		&:hover {
+			.sg-c-motion-object {
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+				background-color: darken($blue-1, 10%);
+	  		animation-fill-mode: both;
+			}
+		}
+
+	}
+
+	.sg-c-motion-information {
+		border-top: .1rem solid $cool-gray-2;
+		padding: 1rem;
+		text-align: center;
+	}
+
+}

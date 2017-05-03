@@ -1,0 +1,98 @@
+  <h3 class="sideNav__hd txt--weight-bold">Consumer Guideliness<h3></a>
+             <div class="sideNav__bd">
+                <a href="#nav1" class="back txt--size-14">< Back</a>
+             </div>
+
+                 
+        <ul class="sideNav--links">
+        
+            <a href="#basics" data-toggle="basics">
+                  <li class="sideNav--item--link">
+                <div class="flag flag--middle">
+                  
+                        <div class="flag__bd txt--weight-bold txt--size-14">Basics</div>
+                        <div class="flag__ft">></div>
+                   
+                </div>
+                 </li>
+            </a>
+
+              <a href="#webResponsive" data-toggle="webResponsive">
+                  <li class="sideNav--item--link">
+                <div class="flag flag--middle">
+                  
+                        <div class="flag__bd txt--weight-bold txt--size-14">Web Responsive</div>
+                        <div class="flag__ft">></div>
+                   
+                </div>
+                 </li>
+            </a>
+            <a href="#mobileNative" data-toggle="mobileNative">
+                  <li class="sideNav--item--link">
+                <div class="flag flag--middle">
+                  
+                        <div class="flag__bd txt--weight-bold txt--size-14">MobileNatiive</div>
+                        <div class="flag__ft">></div>
+                   
+                </div>
+                 </li>
+            </a>
+
+                <a href="#" data-toggle="agent">
+                  <li class="padding--x1">
+                <div>About</div>
+                 </li>
+            </a>
+             <a href="#contribution" data-toggle="agent">
+                 <li class="padding--x1">
+                <div>Contribution</div>
+                 </li>
+            </a>
+             <a href="#resources" data-toggle="agent">
+                  <li class="padding--x1">
+                <div>Resources</div>
+                 </li>
+            </a>
+       
+        </ul>
+
+
+
+
+
+
+
+
+<div id="nav2" data-toggle="nav2" class="sideNav">
+
+       
+    
+           
+               
+</div>
+
+        <div id="agent" class="sideNav--item hide">
+            <a href="#nav1" class="back">
+                < Back</a> agent guidelines
+    </div>
+
+    <div id="components" class="sideNav--item  hide">
+        <a href="#nav1" class="back">
+            < Back</a>
+                Components
+    </div>
+
+
+   <div id="basics" class="sideNav--item hide">
+             basics
+   </div>
+
+
+   <div id="webResponsive" class="sideNav--item hide">
+          web Responsive
+   </div>
+
+
+   <div id="mobileNative" class="sideNav--item hide">
+          mobileNative
+   </div>

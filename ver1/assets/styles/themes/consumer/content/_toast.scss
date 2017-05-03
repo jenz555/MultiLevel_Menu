@@ -1,0 +1,8 @@
+.c-toast {
+  background: rgba(0,108,104,0.95);
+  @include border-radius(2px);
+
+  &__content {
+    font-family: $font-brand-light;
+  }
+}

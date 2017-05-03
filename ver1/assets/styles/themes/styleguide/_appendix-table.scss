@@ -1,0 +1,25 @@
+.sg-appendix-table  {
+  margin-bottom: 1rem;
+
+  code {
+    background-color: transparent;
+  }
+
+  thead tr > * + * {
+    border-left: 1px solid darken($green-1, 20%);
+  }
+
+  tbody tr > * + * {
+    border-left: 1px solid darken($green-1, 15%);
+  }
+
+  thead > tr {
+    background-color: darken($green-1, 6%);
+    color: $gray-6;
+  }
+
+  tbody > tr {
+    background-color: $green-1;
+    border: 0;
+  }
+}

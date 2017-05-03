@@ -1,0 +1,191 @@
+.icon--arrow {
+    width: 1rem;
+    height: 1rem;
+}
+
+.header--blue {
+    background: $blue-1;
+}
+
+.menu,
+.menu__item {
+  width: 100%;
+  top: 60px;
+  background-color: #f5f5f5;
+  position: fixed;
+  bottom: 0;
+  z-index: $zIndex-5;
+  -webkit-overflow-scrolling: touch;
+  width: 40%;
+  height: 100%;
+  animation-duration: 0.5s;
+    -webkit-transform-duration: 0.5s;
+      -moz-transform-duration: 0.5s;
+}
+
+.menu__item {
+   animation-duration: 0.2s;
+    -webkit-transform-duration: 0.2s;
+      -moz-transform-duration: 0.2s;
+}
+
+.menu:target  {
+    display: block;  
+}
+
+.menu__item:target  {
+    display: block;
+}
+
+.menu__hd {
+    padding: 1rem;
+    background-color: #004a88;
+    color: $white;
+}
+
+.hide {
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.contextual-nav a, .contextual-nav a:visited {
+    color: $blue-1;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0 16px;
+    transition: background-color 0.2s linear;
+    padding: 0.5rem 1.25rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.contextual-nav a.isActive, .contextual-nav a:hover {
+    background-color: #003764;
+    color: $white;
+    text-decoration: none;
+}
+
+.hamburger__navicon--isActive {
+  background-color: transparent; 
+}
+
+.hamburger__container {
+    background-color: $blue-1;
+}
+
+
+
+// @media (max-width: 600px)
+
+
+.hig__header {
+    background: $blue-1;
+    padding: 0;
+    position: relative;
+    height: 60px;
+    
+}
+
+// .polygon__container {
+//     position: relative;
+//     width: 100%;
+    
+//     &:before {
+//         content: '';
+//         width: 0;
+//         height: 0;
+//         left: 0;
+//         border-left: 50px solid transparent;
+//         border-right: 50px solid transparent;
+//            border-bottom: 62px solid #0096d6;
+//             position: absolute;
+//         top: 0;
+        
+
+//     }
+
+//        &:after {
+//         content: '';
+//         width: 0;
+//         height: 0;
+//         left: 90%;
+//        border-left: 50px solid transparent;
+//         border-right: 50px solid transparent;
+//            border-bottom: 62px solid $blue-1;
+//             position: absolute;
+//         top: 0;
+//         left: 75%;
+        
+//     }
+
+// }
+
+// .polygon {
+//     position: absolute;
+//     background-color: #0096d6;
+//     width: 75%;
+//     height: 100%;
+//     top: 0;
+//     left: 13%;
+// }
+
+
+
+.polygon__container {
+    position: relative;
+    width: 100%;
+    }
+
+.polygon{
+    width: 100%;
+	height: 60px;
+    position: relative;
+       vertical-align: middle;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+         transform: skew(-20deg);
+	background: #004a88;
+    background-repeat: none;
+}
+
+
+.polygon__logo {
+    height: 60px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    margin: 0 auto;
+    text-align: center;
+    width: 40px;
+}
+
+.search__logo {
+       margin-top: 5px;
+}
+//helpers
+
+.padding--x0 {
+    padding: 0rem;
+    //.pxsToRems(padding, (@base--spacingUnit * 8));
+}
+
+
+
+// for desktop to mobile switch
+ @media (max-width: $breakpoint-medium) {
+    .menu,
+    .menu__item {
+        width: 100%;
+        top: 60px;
+     }
+
+     .mainHeader {
+        position: fixed;
+     }
+
+}
